@@ -14,11 +14,15 @@
 		BA2BB8911E6AC8270045369B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA2BB8901E6AC8270045369B /* Assets.xcassets */; };
 		BA2BB8941E6AC8270045369B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA2BB8921E6AC8270045369B /* LaunchScreen.storyboard */; };
 		BA2BB89C1E6AC9310045369B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA2BB89B1E6AC9310045369B /* GoogleService-Info.plist */; };
+		BA45CF0B1E7D417B00B53382 /* CirlceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45CF0A1E7D417B00B53382 /* CirlceView.swift */; };
+		BA45CF0D1E80497400B53382 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45CF0C1E80497400B53382 /* PostCell.swift */; };
+		BA45CF101E8A591F00B53382 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45CF0F1E8A591F00B53382 /* DataService.swift */; };
 		BAC2890F1E6C07490043711C /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC2890E1E6C07490043711C /* FancyView.swift */; };
 		BAC289121E6C07F40043711C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC289111E6C07F40043711C /* Constants.swift */; };
 		BAC289141E6C0AA90043711C /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC289131E6C0AA90043711C /* RoundBtn.swift */; };
 		BAC289161E6C0D9E0043711C /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC289151E6C0D9E0043711C /* FancyField.swift */; };
 		BAC289181E6C19F70043711C /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC289171E6C19F70043711C /* FancyBtn.swift */; };
+		BAC2891E1E716FC60043711C /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC2891D1E716FC60043711C /* FeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +36,16 @@
 		BA2BB8931E6AC8270045369B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA2BB8951E6AC8270045369B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA2BB89B1E6AC9310045369B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA45CF0A1E7D417B00B53382 /* CirlceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirlceView.swift; sourceTree = "<group>"; };
+		BA45CF0C1E80497400B53382 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		BA45CF0F1E8A591F00B53382 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		BAC2890E1E6C07490043711C /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		BAC289111E6C07F40043711C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BAC289131E6C0AA90043711C /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		BAC289151E6C0D9E0043711C /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		BAC289171E6C19F70043711C /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		BAC289191E6D6EB00043711C /* devslopes-social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "devslopes-social.entitlements"; sourceTree = "<group>"; };
+		BAC2891D1E716FC60043711C /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		F7EE8CFCF7518AAC96B92F68 /* Pods-devslopes-social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social/Pods-devslopes-social.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +99,7 @@
 		BA2BB8881E6AC8270045369B /* devslopes-social */ = {
 			isa = PBXGroup;
 			children = (
+				BA45CF0E1E8A58E500B53382 /* Services */,
 				BAC289191E6D6EB00043711C /* devslopes-social.entitlements */,
 				BAC289101E6C07DF0043711C /* Util */,
 				BAC2890B1E6ACEE20043711C /* Model */,
@@ -104,6 +113,14 @@
 				BA2BB8951E6AC8270045369B /* Info.plist */,
 			);
 			path = "devslopes-social";
+			sourceTree = "<group>";
+		};
+		BA45CF0E1E8A58E500B53382 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA45CF0F1E8A591F00B53382 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		BAC2890B1E6ACEE20043711C /* Model */ = {
@@ -120,6 +137,8 @@
 				BAC289131E6C0AA90043711C /* RoundBtn.swift */,
 				BAC289151E6C0D9E0043711C /* FancyField.swift */,
 				BAC289171E6C19F70043711C /* FancyBtn.swift */,
+				BA45CF0A1E7D417B00B53382 /* CirlceView.swift */,
+				BA45CF0C1E80497400B53382 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -128,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				BA2BB88B1E6AC8270045369B /* SignInVC.swift */,
+				BAC2891D1E716FC60043711C /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -273,10 +293,14 @@
 				BAC289161E6C0D9E0043711C /* FancyField.swift in Sources */,
 				BA2BB88C1E6AC8270045369B /* SignInVC.swift in Sources */,
 				BAC289141E6C0AA90043711C /* RoundBtn.swift in Sources */,
+				BA45CF0B1E7D417B00B53382 /* CirlceView.swift in Sources */,
 				BA2BB88A1E6AC8270045369B /* AppDelegate.swift in Sources */,
+				BA45CF101E8A591F00B53382 /* DataService.swift in Sources */,
+				BAC2891E1E716FC60043711C /* FeedVC.swift in Sources */,
 				BAC2890F1E6C07490043711C /* FancyView.swift in Sources */,
 				BAC289121E6C07F40043711C /* Constants.swift in Sources */,
 				BAC289181E6C19F70043711C /* FancyBtn.swift in Sources */,
+				BA45CF0D1E80497400B53382 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
