@@ -18,6 +18,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     var posts = [Post]()
     var imagePicker: UIImagePickerController!
+    // make it global by using static since we will use it in other places
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,8 +67,16 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         let post = posts[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell {
-            cell.configureCell(post: post)
-            return cell
+            
+            //check if image is in the cache
+            if let img = FeedVC.imageCache.object(forKey: post.imageUrl as NSString) {
+                cell.configureCell(post: post, img: img)
+                return cell
+            } else {
+                cell.configureCell(post: post)
+                return cell
+            }
+            
         } else {
             return PostCell()
         }
